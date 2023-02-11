@@ -1,0 +1,300 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font: size 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  padding: 2rem 6rem;
+  background: #b4893d;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #b4893d;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+button:hover {
+  background: hsl(38, 48%, 42%);
+}
+
+/* Nav Section With HERO */
+.main-head {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: sticky;
+  top: 0px;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/pexels-robin-stickel-70497.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+#contact {
+  min-height: 100vh;
+  background: url();
+}
+
+/*About Us Section*/
+
+#aboutus {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/pexels-ash-376464.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.aboutus-head {
+  width: 90%;
+  margin: auto;
+}
+.aboutus-head h2 {
+  padding: 1rem rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.aboutus-head h3 {
+  padding: 4rem 0rem;
+  font-size: 2rem;
+}
+
+/* Menu Section*/
+.menu-head {
+  background: white;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+}
+
+.menu-head h2,
+.menu-head h3 {
+  flex-basis: 100%;
+  font-size: 1.6rem;
+}
+
+.menu-head h2 {
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 20vh;
+  margin: 1rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.cards img {
+  max-width: 12%;
+  margin: 1rem;
+}
+
+.card h4,
+.card p {
+  padding: 1rem;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+.card-icon {
+  background: #b4893d;
+}
+
+/* Contact Us Section */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/pexels-igor-starkov-1307698.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(0, 0, 0, 0.7);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.form-head h2 {
+  text-align: center;
+  padding: 3rem;
+  font-size: 3rem;
+}
+.name-form,
+.email-form {
+  padding: 1rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 0rem;
+}
+.form-wrapper button {
+  background-color: #b4893d;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.form-wrapper button:hover {
+  background-color: hsl(38, 48%, 42%);
+}
+
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+/* Footer */
+
+footer {
+  color: white;
+  background: red;
+  display: flex;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+  font-size: 2rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Button focus to make website accessible */
+
+button:focus {
+  background: #795c2a;
+  outline-style: solid;
+  outline-color: white;
+}
+/* Media Query */
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1.5rem;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+}
