@@ -121,12 +121,12 @@ nav ul {
   margin: auto;
 }
 .aboutus-head h2 {
-  padding: 1rem rem;
+  padding: 0rem 1rem;
   text-decoration: underline;
-  text-decoration-thickness: 0.5rem;
+  text-decoration-thickness: 0.4rem;
 }
 .aboutus-head h3 {
-  padding: 4rem 0rem;
+  padding: 0rem 1rem;
   font-size: 2rem;
 }
 
@@ -134,7 +134,7 @@ nav ul {
 .menu-head {
   background: white;
   padding: 3rem;
-  min-height: 30vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,9 +143,7 @@ nav ul {
   text-align: center;
 }
 
-.menu-head h2,
 .menu-head h3 {
-  flex-basis: 100%;
   font-size: 1.6rem;
 }
 
@@ -158,27 +156,31 @@ nav ul {
   width: 90%;
   margin: auto;
   display: flex;
-  min-height: 70vh;
+  min-height: 60vh;
   align-items: center;
   flex-wrap: wrap;
 }
 .card {
   text-align: center;
   flex: 1 1 25rem;
-  min-height: 20vh;
-  margin: 1rem 5rem;
+  min-height: 35vh;
+  margin: 2rem 5rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 .cards img {
-  max-width: 12%;
-  margin: 1rem;
+  max-width: 15%;
+  margin: 1.5rem;
 }
 
 .card h4,
 .card p {
   padding: 1rem;
-  line-height: 2;
+  line-height: 1.8;
   font-size: 1.6rem;
+}
+
+.card:first-child p {
+  text-align: left;
 }
 
 .card-icon {
@@ -188,7 +190,7 @@ nav ul {
 /* Contact Us Section */
 
 #contact {
-  min-height: 100vh;
+  min-height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url("./img/pexels-igor-starkov-1307698.jpg");
   background-position: center;
@@ -201,7 +203,7 @@ nav ul {
 
 .form-wrapper {
   background: rgba(0, 0, 0, 0.7);
-  width: 60%;
+  width: 50%;
   color: white;
   border-radius: 20px;
   text-align: center;
@@ -209,42 +211,39 @@ nav ul {
 
 .form-head h2 {
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
   font-size: 3rem;
 }
 .name-form,
 .email-form {
-  padding: 1rem;
+  padding-top: 2rem;
   text-align: center;
 }
 
 .form-wrapper label {
-  margin: 0rem 0rem;
+  margin: 0rem 1.5rem;
+  font-size: 1.6rem;
 }
 .form-wrapper button {
   background-color: #b4893d;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   margin-top: 8rem;
   border-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .form-wrapper button:hover {
-  background-color: hsl(38, 48%, 42%);
+  background-color: hsl(38, 51%, 30%);
 }
 
 .form-wrapper input {
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
 }
 
-/* Footer */
-
 footer {
-  color: white;
-  background: red;
-  display: flex;
+  background: white;
 }
 
 .footer-wrapper {
@@ -259,14 +258,24 @@ footer {
 
 footer h5 {
   flex: 1 1 40rem;
-  font-size: 2rem;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 1;
 }
 footer ul {
   display: flex;
   list-style: none;
   flex: 1 1 40rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
+}
+
+.socials {
+  display: flex;
+  padding: 0.5rem;
+  width: 40px;
+  text-decoration: none;
+  color: white;
 }
 
 /* Button focus to make website accessible */
@@ -286,7 +295,7 @@ button:focus {
     text-align: center;
   }
   #logo {
-    padding: 1.5rem;
+    padding: 2rem;
   }
   .form-wrapper {
     width: 100%;
