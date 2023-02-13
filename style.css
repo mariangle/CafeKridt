@@ -122,8 +122,6 @@ nav ul {
 }
 .aboutus-head h2 {
   padding: 0rem 1rem;
-  text-decoration: underline;
-  text-decoration-thickness: 0.4rem;
 }
 .aboutus-head h3 {
   padding: 0rem 1rem;
@@ -242,6 +240,7 @@ nav ul {
   padding: 0.5rem 3rem;
 }
 
+/* 
 footer {
   background: white;
 }
@@ -276,6 +275,28 @@ footer ul {
   width: 40px;
   text-decoration: none;
   color: white;
+} */
+
+footer {
+  background: rgb(20, 20, 20);
+  color: white;
+  display: flex;
+  padding: 2rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+footer h4 {
+  flex: 3 1 40rem;
+  font-size: calc(0.1rem + 1vw);
+  font-weight: lighter;
 }
 
 /* Button focus to make website accessible */
